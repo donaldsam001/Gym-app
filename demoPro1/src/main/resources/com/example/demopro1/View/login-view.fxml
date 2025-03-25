@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="368.0" maxWidth="600.0" prefHeight="368.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demopro1.Controller.LoginController">
+   <children>
+      <AnchorPane prefHeight="371.0" prefWidth="220.0">
+         <children>
+            <ImageView fitHeight="409.0" fitWidth="220.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/carrot&amp;rau.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="248.0" layoutY="154.0" text="Username">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="364.0" layoutY="155.0" promptText="Username" />
+      <PasswordField fx:id="password" layoutX="364.0" layoutY="206.0" promptText="Password" />
+      <Label layoutX="248.0" layoutY="205.0" text="Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginButton" layoutX="323.0" layoutY="276.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #3567ff;" text="Login" textFill="WHITE" />
+      <Button fx:id="cancelButton" layoutX="323.0" layoutY="315.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #3567ff;" text="Cancel" textFill="WHITE" />
+      <ImageView fitHeight="121.0" fitWidth="381.0" layoutX="338.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../iconkhoa.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

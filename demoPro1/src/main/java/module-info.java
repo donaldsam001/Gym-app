@@ -1,0 +1,12 @@
+module com.example.demopro1 {
+    requires javafx.controls;
+    requires javafx.fxml;
+
+    requires com.dlsc.formsfx;
+    requires java.desktop;
+
+    opens com.example.demopro1 to javafx.fxml;
+    exports com.example.demopro1;
+    exports com.example.demopro1.Controller;
+    opens com.example.demopro1.Controller to javafx.fxml;
+}
